@@ -1,20 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Yangocean</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: #f7f9fb;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #5dade2;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #666;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #34495e;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+
+    .feature {
+      background: #eef6f9;
+      padding: 15px;
+      border-left: 4px solid #5dade2;
+      border-radius: 6px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+    }
+
+    @media (min-width: 600px) {
+      .features {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+  </style>
 </head>
+
 <body>
 
-  <h1>Welcome to Our Website</h1>
+  <div class="container">
 
-  <p>Simple, helpful, and mindful digital content.</p>
+    <!-- Navigation -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
 
-  <nav>
-    <a href="about.html">About</a> |
-    <a href="privacy.html">Privacy</a> |
-    <a href="terms.html">Terms</a>
-  </nav>
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Welcome to Yangocean</h1>
+      <p>
+        Simple, calm, and meaningful digital experiences for everyday life.
+      </p>
+    </div>
+
+    <!-- About Preview -->
+    <div class="card">
+      <h2>About Us</h2>
+      <p>
+        We create simple and practical tools, resources, and content to support well-being, productivity, and awareness.
+      </p>
+      <a href="about.html">Learn more →</a>
+    </div>
+
+    <!-- Features -->
+    <div class="card">
+      <h2>What We Offer</h2>
+      <div class="features">
+        <div class="feature">Helpful information and resources</div>
+        <div class="feature">Simple tools and guides</div>
+        <div class="feature">Mindful daily content</div>
+        <div class="feature">Practical life support tools</div>
+      </div>
+    </div>
+
+    <!-- Future Section (for your app) -->
+    <div class="card">
+      <h2>Coming Soon</h2>
+      <p>
+        We are building tools and features to support your daily well-being journey.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      © 2026 Yangocean · Built with calm and purpose
+    </div>
+
+  </div>
 
 </body>
 </html>

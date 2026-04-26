@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yangocean-web.pages.dev/sitemap.xml
+
+# Block unnecessary admin/system paths (safe SEO hygiene)
+Disallow: /admin/
+Disallow: /config/
+Disallow: /private/

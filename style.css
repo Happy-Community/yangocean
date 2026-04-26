@@ -1,15 +1,91 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 40px;
+  margin: 0;
+  background: #f7f9fb;
+  color: #333;
   line-height: 1.6;
 }
 
+/* Layout container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Headings */
 h1 {
   color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #34495e;
+  margin-top: 25px;
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 10px;
 }
 
 nav a {
-  margin-right: 10px;
+  margin: 0 10px;
   text-decoration: none;
   color: #0077cc;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Card UI (VERY important for AdSense quality signal) */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+/* Highlight boxes */
+.highlight {
+  background: #eef6f9;
+  padding: 12px;
+  border-left: 4px solid #5dade2;
+  border-radius: 6px;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Feature box */
+.item {
+  background: #eef6f9;
+  padding: 12px;
+  border-left: 4px solid #5dade2;
+  border-radius: 6px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 13px;
+  color: #888;
 }
